@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EntityDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntityDataModelStoreContainer">
+    <EntitySet Name="EstudianteSet" EntityType="EntityDataModel.Store.EstudianteSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProfesorSet" EntityType="EntityDataModel.Store.ProfesorSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExperienciaEducativaSet" EntityType="EntityDataModel.Store.ExperienciaEducativaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProblematicaAcademicaSet" EntityType="EntityDataModel.Store.ProblematicaAcademicaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComentariosProblematicasSet" EntityType="EntityDataModel.Store.ComentariosProblematicasSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TutoriasAcademicasSet" EntityType="EntityDataModel.Store.TutoriasAcademicasSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PeriodoEscolarSet" EntityType="EntityDataModel.Store.PeriodoEscolarSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AsistenciaSet" EntityType="EntityDataModel.Store.AsistenciaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProgramaEducativoSet" EntityType="EntityDataModel.Store.ProgramaEducativoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdministradorSet" EntityType="EntityDataModel.Store.AdministradorSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AsistenciaEstudiante" EntityType="EntityDataModel.Store.AsistenciaEstudiante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProgramaEducativoProfesor" EntityType="EntityDataModel.Store.ProgramaEducativoProfesor" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TutoriasAcademicasPeriodoEscolar" Association="EntityDataModel.Store.TutoriasAcademicasPeriodoEscolar">
+      <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+      <End Role="PeriodoEscolar" EntitySet="PeriodoEscolarSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProblematicaAcademicaComentariosProblematicas" Association="EntityDataModel.Store.ProblematicaAcademicaComentariosProblematicas">
+      <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+      <End Role="ComentariosProblematicas" EntitySet="ComentariosProblematicasSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProblematicaAcademicaExperienciaEducativa" Association="EntityDataModel.Store.ProblematicaAcademicaExperienciaEducativa">
+      <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProgramaEducativoEstudiante" Association="EntityDataModel.Store.ProgramaEducativoEstudiante">
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+      <End Role="Estudiante" EntitySet="EstudianteSet" />
+    </AssociationSet>
+    <AssociationSet Name="TutoriasAcademicasProblematicaAcademica" Association="EntityDataModel.Store.TutoriasAcademicasProblematicaAcademica">
+      <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+      <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+    </AssociationSet>
+    <AssociationSet Name="PeriodoEscolarProgramaEducativo" Association="EntityDataModel.Store.PeriodoEscolarProgramaEducativo">
+      <End Role="PeriodoEscolar" EntitySet="PeriodoEscolarSet" />
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+    </AssociationSet>
+    <AssociationSet Name="TutoriasAcademicasAsistencia" Association="EntityDataModel.Store.TutoriasAcademicasAsistencia">
+      <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+      <End Role="Asistencia" EntitySet="AsistenciaSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProfesorEstudiante" Association="EntityDataModel.Store.ProfesorEstudiante">
+      <End Role="Profesor" EntitySet="ProfesorSet" />
+      <End Role="Estudiante" EntitySet="EstudianteSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProgramaEducativoExperienciaEducativa" Association="EntityDataModel.Store.ProgramaEducativoExperienciaEducativa">
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsistenciaEstudiante_Asistencia" Association="EntityDataModel.Store.FK_AsistenciaEstudiante_Asistencia">
+      <End Role="Asistencia" EntitySet="AsistenciaSet" />
+      <End Role="AsistenciaEstudiante" EntitySet="AsistenciaEstudiante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsistenciaEstudiante_Estudiante" Association="EntityDataModel.Store.FK_AsistenciaEstudiante_Estudiante">
+      <End Role="Estudiante" EntitySet="EstudianteSet" />
+      <End Role="AsistenciaEstudiante" EntitySet="AsistenciaEstudiante" />
+    </AssociationSet>
+    <AssociationSet Name="ExperienciaEducativaProfesor" Association="EntityDataModel.Store.ExperienciaEducativaProfesor">
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+      <End Role="Profesor" EntitySet="ProfesorSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProgramaEducativoProfesor_ProgramaEducativo" Association="EntityDataModel.Store.FK_ProgramaEducativoProfesor_ProgramaEducativo">
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+      <End Role="ProgramaEducativoProfesor" EntitySet="ProgramaEducativoProfesor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProgramaEducativoProfesor_Profesor" Association="EntityDataModel.Store.FK_ProgramaEducativoProfesor_Profesor">
+      <End Role="Profesor" EntitySet="ProfesorSet" />
+      <End Role="ProgramaEducativoProfesor" EntitySet="ProgramaEducativoProfesor" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EstudianteSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Matricula" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorreoPersonal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorreoInstitucional" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProgramaEducativo_Id" Type="int" Nullable="false" />
+    <Property Name="Tutor_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProfesorSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroDePersonal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorreoPersonal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorreoInstitucional" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EsTutor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EsCoordinador" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExperienciaEducativaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nrc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProgramaEducativo_Id" Type="int" Nullable="false" />
+    <Property Name="Profesor_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProblematicaAcademicaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NumeroIncidencias" Type="smallint" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExperienciaEducativa_Id" Type="int" Nullable="false" />
+    <Property Name="TutoriasAcademicas_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComentariosProblematicasSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProblematicaAcademica_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TutoriasAcademicasSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroDeSesion" Type="smallint" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaTermino" Type="datetime" Nullable="false" />
+    <Property Name="FechaEntrega" Type="datetime" Nullable="false" />
+    <Property Name="PeriodoEscolar_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PeriodoEscolarSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaTermino" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AsistenciaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Presente" Type="bit" Nullable="false" />
+    <Property Name="TutoriasAcademicas_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramaEducativoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PeriodoEscolar_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdministradorSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AsistenciaEstudiante">
+    <Key>
+      <PropertyRef Name="Asistencia_Id" />
+      <PropertyRef Name="Estudiante_Id" />
+    </Key>
+    <Property Name="Asistencia_Id" Type="int" Nullable="false" />
+    <Property Name="Estudiante_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramaEducativoProfesor">
+    <Key>
+      <PropertyRef Name="ProgramaEducativo_Id" />
+      <PropertyRef Name="Profesor_Id" />
+    </Key>
+    <Property Name="ProgramaEducativo_Id" Type="int" Nullable="false" />
+    <Property Name="Profesor_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="TutoriasAcademicasPeriodoEscolar">
+    <End Role="TutoriasAcademicas" Type="EntityDataModel.Store.TutoriasAcademicasSet" Multiplicity="*" />
+    <End Role="PeriodoEscolar" Type="EntityDataModel.Store.PeriodoEscolarSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="PeriodoEscolar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TutoriasAcademicas">
+        <PropertyRef Name="PeriodoEscolar_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProblematicaAcademicaComentariosProblematicas">
+    <End Role="ProblematicaAcademica" Type="EntityDataModel.Store.ProblematicaAcademicaSet" Multiplicity="1" />
+    <End Role="ComentariosProblematicas" Type="EntityDataModel.Store.ComentariosProblematicasSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProblematicaAcademica">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComentariosProblematicas">
+        <PropertyRef Name="ProblematicaAcademica_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProblematicaAcademicaExperienciaEducativa">
+    <End Role="ProblematicaAcademica" Type="EntityDataModel.Store.ProblematicaAcademicaSet" Multiplicity="*" />
+    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ExperienciaEducativa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProblematicaAcademica">
+        <PropertyRef Name="ExperienciaEducativa_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProgramaEducativoEstudiante">
+    <End Role="ProgramaEducativo" Type="EntityDataModel.Store.ProgramaEducativoSet" Multiplicity="1" />
+    <End Role="Estudiante" Type="EntityDataModel.Store.EstudianteSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramaEducativo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Estudiante">
+        <PropertyRef Name="ProgramaEducativo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TutoriasAcademicasProblematicaAcademica">
+    <End Role="TutoriasAcademicas" Type="EntityDataModel.Store.TutoriasAcademicasSet" Multiplicity="1" />
+    <End Role="ProblematicaAcademica" Type="EntityDataModel.Store.ProblematicaAcademicaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TutoriasAcademicas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProblematicaAcademica">
+        <PropertyRef Name="TutoriasAcademicas_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PeriodoEscolarProgramaEducativo">
+    <End Role="PeriodoEscolar" Type="EntityDataModel.Store.PeriodoEscolarSet" Multiplicity="1" />
+    <End Role="ProgramaEducativo" Type="EntityDataModel.Store.ProgramaEducativoSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PeriodoEscolar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProgramaEducativo">
+        <PropertyRef Name="PeriodoEscolar_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TutoriasAcademicasAsistencia">
+    <End Role="TutoriasAcademicas" Type="EntityDataModel.Store.TutoriasAcademicasSet" Multiplicity="1" />
+    <End Role="Asistencia" Type="EntityDataModel.Store.AsistenciaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TutoriasAcademicas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="TutoriasAcademicas_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProfesorEstudiante">
+    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="1" />
+    <End Role="Estudiante" Type="EntityDataModel.Store.EstudianteSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Estudiante">
+        <PropertyRef Name="Tutor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProgramaEducativoExperienciaEducativa">
+    <End Role="ProgramaEducativo" Type="EntityDataModel.Store.ProgramaEducativoSet" Multiplicity="1" />
+    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramaEducativo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExperienciaEducativa">
+        <PropertyRef Name="ProgramaEducativo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ExperienciaEducativaProfesor">
+    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="*" />
+    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Profesor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExperienciaEducativa">
+        <PropertyRef Name="Profesor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsistenciaEstudiante_Asistencia">
+    <End Role="Asistencia" Type="EntityDataModel.Store.AsistenciaSet" Multiplicity="1" />
+    <End Role="AsistenciaEstudiante" Type="EntityDataModel.Store.AsistenciaEstudiante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asistencia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AsistenciaEstudiante">
+        <PropertyRef Name="Asistencia_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsistenciaEstudiante_Estudiante">
+    <End Role="AsistenciaEstudiante" Type="EntityDataModel.Store.AsistenciaEstudiante" Multiplicity="*" />
+    <End Role="Estudiante" Type="EntityDataModel.Store.EstudianteSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Estudiante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AsistenciaEstudiante">
+        <PropertyRef Name="Estudiante_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProgramaEducativoProfesor_ProgramaEducativo">
+    <End Role="ProgramaEducativo" Type="EntityDataModel.Store.ProgramaEducativoSet" Multiplicity="1" />
+    <End Role="ProgramaEducativoProfesor" Type="EntityDataModel.Store.ProgramaEducativoProfesor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramaEducativo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProgramaEducativoProfesor">
+        <PropertyRef Name="ProgramaEducativo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProgramaEducativoProfesor_Profesor">
+    <End Role="ProgramaEducativoProfesor" Type="EntityDataModel.Store.ProgramaEducativoProfesor" Multiplicity="*" />
+    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Profesor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProgramaEducativoProfesor">
+        <PropertyRef Name="Profesor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EntityDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="EntityDataModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EstudianteSet" EntityType="EntityDataModel.Estudiante" />
+          <EntitySet Name="ProfesorSet" EntityType="EntityDataModel.Profesor" />
+          <EntitySet Name="ExperienciaEducativaSet" EntityType="EntityDataModel.ExperienciaEducativa" />
+          <EntitySet Name="ProblematicaAcademicaSet" EntityType="EntityDataModel.ProblematicaAcademica" />
+          <EntitySet Name="ComentariosProblematicasSet" EntityType="EntityDataModel.ComentariosProblematicas" />
+          <EntitySet Name="TutoriasAcademicasSet" EntityType="EntityDataModel.TutoriasAcademicas" />
+          <EntitySet Name="PeriodoEscolarSet" EntityType="EntityDataModel.PeriodoEscolar" />
+          <EntitySet Name="AsistenciaSet" EntityType="EntityDataModel.Asistencia" />
+          <AssociationSet Name="TutoriasAcademicasPeriodoEscolar" Association="EntityDataModel.TutoriasAcademicasPeriodoEscolar">
+            <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+            <End Role="PeriodoEscolar" EntitySet="PeriodoEscolarSet" />
+          </AssociationSet>
+          <AssociationSet Name="ProblematicaAcademicaComentariosProblematicas" Association="EntityDataModel.ProblematicaAcademicaComentariosProblematicas">
+            <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+            <End Role="ComentariosProblematicas" EntitySet="ComentariosProblematicasSet" />
+          </AssociationSet>
+          <EntitySet Name="ProgramaEducativoSet" EntityType="EntityDataModel.ProgramaEducativo" />
+          <AssociationSet Name="ProblematicaAcademicaExperienciaEducativa" Association="EntityDataModel.ProblematicaAcademicaExperienciaEducativa">
+            <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+            <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+          </AssociationSet>
+          <AssociationSet Name="ProgramaEducativoEstudiante" Association="EntityDataModel.ProgramaEducativoEstudiante">
+            <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+            <End Role="Estudiante" EntitySet="EstudianteSet" />
+          </AssociationSet>
+          <AssociationSet Name="TutoriasAcademicasProblematicaAcademica" Association="EntityDataModel.TutoriasAcademicasProblematicaAcademica">
+            <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+            <End Role="ProblematicaAcademica" EntitySet="ProblematicaAcademicaSet" />
+          </AssociationSet>
+          <AssociationSet Name="PeriodoEscolarProgramaEducativo" Association="EntityDataModel.PeriodoEscolarProgramaEducativo">
+            <End Role="PeriodoEscolar" EntitySet="PeriodoEscolarSet" />
+            <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+          </AssociationSet>
+          <AssociationSet Name="TutoriasAcademicasAsistencia" Association="EntityDataModel.TutoriasAcademicasAsistencia">
+            <End Role="TutoriasAcademicas" EntitySet="TutoriasAcademicasSet" />
+            <End Role="Asistencia" EntitySet="AsistenciaSet" />
+          </AssociationSet>
+          <AssociationSet Name="ProfesorEstudiante" Association="EntityDataModel.ProfesorEstudiante">
+            <End Role="Profesor" EntitySet="ProfesorSet" />
+            <End Role="Estudiante" EntitySet="EstudianteSet" />
+          </AssociationSet>
+          <AssociationSet Name="ProgramaEducativoExperienciaEducativa" Association="EntityDataModel.ProgramaEducativoExperienciaEducativa">
+            <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+            <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+          </AssociationSet>
+          <AssociationSet Name="AsistenciaEstudiante" Association="EntityDataModel.AsistenciaEstudiante">
+            <End Role="Asistencia" EntitySet="AsistenciaSet" />
+            <End Role="Estudiante" EntitySet="EstudianteSet" />
+          </AssociationSet>
+          <AssociationSet Name="ExperienciaEducativaProfesor" Association="EntityDataModel.ExperienciaEducativaProfesor">
+            <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativaSet" />
+            <End Role="Profesor" EntitySet="ProfesorSet" />
+          </AssociationSet>
+          <AssociationSet Name="ProgramaEducativoProfesor" Association="EntityDataModel.ProgramaEducativoProfesor">
+            <End Role="ProgramaEducativo" EntitySet="ProgramaEducativoSet" />
+            <End Role="Profesor" EntitySet="ProfesorSet" />
+          </AssociationSet>
+          <EntitySet Name="AdministradorSet" EntityType="EntityDataModel.Administrador" />
+        </EntityContainer>
+        <EntityType Name="Estudiante">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" cg:GetterAccess="Public" cg:SetterAccess="Public" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="Matricula" Type="String" Nullable="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" cg:GetterAccess="Public" cg:SetterAccess="Public" />
+          <Property Name="ApellidoPaterno" Type="String" Nullable="false" cg:GetterAccess="Public" cg:SetterAccess="Public" />
+          <Property Name="ApellidoMaterno" Type="String" Nullable="false" />
+          <Property Name="CorreoPersonal" Type="String" Nullable="false" />
+          <Property Name="CorreoInstitucional" Type="String" Nullable="false" />
+          <NavigationProperty Name="ProgramaEducativo" Relationship="EntityDataModel.ProgramaEducativoEstudiante" FromRole="Estudiante" ToRole="ProgramaEducativo" />
+          <NavigationProperty Name="Tutor" Relationship="EntityDataModel.ProfesorEstudiante" FromRole="Estudiante" ToRole="Profesor" />
+          <NavigationProperty Name="Asistencia" Relationship="EntityDataModel.AsistenciaEstudiante" FromRole="Estudiante" ToRole="Asistencia" />
+        </EntityType>
+        <EntityType Name="Profesor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="NumeroDePersonal" Type="String" Nullable="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" />
+          <Property Name="ApellidoPaterno" Type="String" Nullable="false" />
+          <Property Name="ApellidoMaterno" Type="String" Nullable="false" />
+          <Property Name="CorreoPersonal" Type="String" Nullable="false" />
+          <Property Name="CorreoInstitucional" Type="String" Nullable="false" />
+          <NavigationProperty Name="Estudiante" Relationship="EntityDataModel.ProfesorEstudiante" FromRole="Profesor" ToRole="Estudiante" />
+          <NavigationProperty Name="ExperienciaEducativa" Relationship="EntityDataModel.ExperienciaEducativaProfesor" FromRole="Profesor" ToRole="ExperienciaEducativa" />
+          <NavigationProperty Name="ProgramaEducativo" Relationship="EntityDataModel.ProgramaEducativoProfesor" FromRole="Profesor" ToRole="ProgramaEducativo" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="EsTutor" Type="String" Nullable="false" />
+          <Property Name="EsCoordinador" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ExperienciaEducativa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="Nrc" Type="String" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <NavigationProperty Name="ProblematicaAcademica" Relationship="EntityDataModel.ProblematicaAcademicaExperienciaEducativa" FromRole="ExperienciaEducativa" ToRole="ProblematicaAcademica" />
+          <NavigationProperty Name="ProgramaEducativo" Relationship="EntityDataModel.ProgramaEducativoExperienciaEducativa" FromRole="ExperienciaEducativa" ToRole="ProgramaEducativo" />
+          <NavigationProperty Name="Profesor" Relationship="EntityDataModel.ExperienciaEducativaProfesor" FromRole="ExperienciaEducativa" ToRole="Profesor" />
+        </EntityType>
+        <EntityType Name="ProblematicaAcademica">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" Nullable="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" />
+          <Property Name="NumeroIncidencias" Type="Int16" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" />
+          <NavigationProperty Name="ComentariosProblematicas" Relationship="EntityDataModel.ProblematicaAcademicaComentariosProblematicas" FromRole="ProblematicaAcademica" ToRole="ComentariosProblematicas" />
+          <NavigationProperty Name="ExperienciaEducativa" Relationship="EntityDataModel.ProblematicaAcademicaExperienciaEducativa" FromRole="ProblematicaAcademica" ToRole="ExperienciaEducativa" />
+          <NavigationProperty Name="TutoriasAcademicas" Relationship="EntityDataModel.TutoriasAcademicasProblematicaAcademica" FromRole="ProblematicaAcademica" ToRole="TutoriasAcademicas" />
+        </EntityType>
+        <EntityType Name="ComentariosProblematicas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" Nullable="false" />
+          <NavigationProperty Name="ProblematicaAcademica" Relationship="EntityDataModel.ProblematicaAcademicaComentariosProblematicas" FromRole="ComentariosProblematicas" ToRole="ProblematicaAcademica" />
+        </EntityType>
+        <EntityType Name="TutoriasAcademicas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroDeSesion" Type="Int16" Nullable="false" />
+          <Property Name="FechaInicio" Type="DateTime" Nullable="false" />
+          <Property Name="FechaTermino" Type="DateTime" Nullable="false" />
+          <Property Name="FechaEntrega" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="PeriodoEscolar" Relationship="EntityDataModel.TutoriasAcademicasPeriodoEscolar" FromRole="TutoriasAcademicas" ToRole="PeriodoEscolar" />
+          <NavigationProperty Name="ProblematicaAcademica" Relationship="EntityDataModel.TutoriasAcademicasProblematicaAcademica" FromRole="TutoriasAcademicas" ToRole="ProblematicaAcademica" />
+          <NavigationProperty Name="Asistencia" Relationship="EntityDataModel.TutoriasAcademicasAsistencia" FromRole="TutoriasAcademicas" ToRole="Asistencia" />
+        </EntityType>
+        <EntityType Name="PeriodoEscolar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaInicio" Type="DateTime" Nullable="false" />
+          <Property Name="FechaTermino" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="TutoriasAcademicas" Relationship="EntityDataModel.TutoriasAcademicasPeriodoEscolar" FromRole="PeriodoEscolar" ToRole="TutoriasAcademicas" />
+          <NavigationProperty Name="ProgramaEducativo" Relationship="EntityDataModel.PeriodoEscolarProgramaEducativo" FromRole="PeriodoEscolar" ToRole="ProgramaEducativo" />
+        </EntityType>
+        <EntityType Name="Asistencia">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Presente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TutoriasAcademicas" Relationship="EntityDataModel.TutoriasAcademicasAsistencia" FromRole="Asistencia" ToRole="TutoriasAcademicas" />
+          <NavigationProperty Name="Estudiante" Relationship="EntityDataModel.AsistenciaEstudiante" FromRole="Asistencia" ToRole="Estudiante" />
+        </EntityType>
+        <Association Name="TutoriasAcademicasPeriodoEscolar">
+          <End Type="EntityDataModel.TutoriasAcademicas" Role="TutoriasAcademicas" Multiplicity="*" />
+          <End Type="EntityDataModel.PeriodoEscolar" Role="PeriodoEscolar" Multiplicity="1" />
+        </Association>
+        <Association Name="ProblematicaAcademicaComentariosProblematicas">
+          <End Type="EntityDataModel.ProblematicaAcademica" Role="ProblematicaAcademica" Multiplicity="1" />
+          <End Type="EntityDataModel.ComentariosProblematicas" Role="ComentariosProblematicas" Multiplicity="*" />
+        </Association>
+        <EntityType Name="ProgramaEducativo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <NavigationProperty Name="Estudiante" Relationship="EntityDataModel.ProgramaEducativoEstudiante" FromRole="ProgramaEducativo" ToRole="Estudiante" />
+          <NavigationProperty Name="PeriodoEscolar" Relationship="EntityDataModel.PeriodoEscolarProgramaEducativo" FromRole="ProgramaEducativo" ToRole="PeriodoEscolar" />
+          <NavigationProperty Name="ExperienciaEducativa" Relationship="EntityDataModel.ProgramaEducativoExperienciaEducativa" FromRole="ProgramaEducativo" ToRole="ExperienciaEducativa" />
+          <NavigationProperty Name="Profesor" Relationship="EntityDataModel.ProgramaEducativoProfesor" FromRole="ProgramaEducativo" ToRole="Profesor" />
+        </EntityType>
+        <Association Name="ProblematicaAcademicaExperienciaEducativa">
+          <End Type="EntityDataModel.ProblematicaAcademica" Role="ProblematicaAcademica" Multiplicity="*" />
+          <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="1" />
+        </Association>
+        <Association Name="ProgramaEducativoEstudiante">
+          <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="1" />
+          <End Type="EntityDataModel.Estudiante" Role="Estudiante" Multiplicity="*" />
+        </Association>
+        <Association Name="TutoriasAcademicasProblematicaAcademica">
+          <End Type="EntityDataModel.TutoriasAcademicas" Role="TutoriasAcademicas" Multiplicity="1" />
+          <End Type="EntityDataModel.ProblematicaAcademica" Role="ProblematicaAcademica" Multiplicity="*" />
+        </Association>
+        <Association Name="PeriodoEscolarProgramaEducativo">
+          <End Type="EntityDataModel.PeriodoEscolar" Role="PeriodoEscolar" Multiplicity="1" />
+          <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="*" />
+        </Association>
+        <Association Name="TutoriasAcademicasAsistencia">
+          <End Type="EntityDataModel.TutoriasAcademicas" Role="TutoriasAcademicas" Multiplicity="1" />
+          <End Type="EntityDataModel.Asistencia" Role="Asistencia" Multiplicity="*" />
+        </Association>
+        <Association Name="ProfesorEstudiante">
+          <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="1" />
+          <End Type="EntityDataModel.Estudiante" Role="Estudiante" Multiplicity="*" />
+        </Association>
+        <Association Name="ProgramaEducativoExperienciaEducativa">
+          <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="1" />
+          <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="*" />
+        </Association>
+        <Association Name="AsistenciaEstudiante">
+          <End Type="EntityDataModel.Asistencia" Role="Asistencia" Multiplicity="*" />
+          <End Type="EntityDataModel.Estudiante" Role="Estudiante" Multiplicity="*" />
+        </Association>
+        <Association Name="ExperienciaEducativaProfesor">
+          <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="1" />
+          <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="1" />
+        </Association>
+        <Association Name="ProgramaEducativoProfesor">
+          <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="*" />
+          <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Administrador">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityDataModelStoreContainer" CdmEntityContainer="EntityDataModelContainer">
+    <EntitySetMapping Name="EstudianteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Estudiante)">
+        <MappingFragment StoreEntitySet="EstudianteSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
+          <ScalarProperty Name="CorreoInstitucional" ColumnName="CorreoInstitucional" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfesorSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Profesor)">
+        <MappingFragment StoreEntitySet="ProfesorSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDePersonal" ColumnName="NumeroDePersonal" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
+          <ScalarProperty Name="CorreoInstitucional" ColumnName="CorreoInstitucional" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EsTutor" ColumnName="EsTutor" />
+          <ScalarProperty Name="EsCoordinador" ColumnName="EsCoordinador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExperienciaEducativaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ExperienciaEducativa)">
+        <MappingFragment StoreEntitySet="ExperienciaEducativaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nrc" ColumnName="Nrc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProblematicaAcademicaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ProblematicaAcademica)">
+        <MappingFragment StoreEntitySet="ProblematicaAcademicaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="NumeroIncidencias" ColumnName="NumeroIncidencias" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComentariosProblematicasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ComentariosProblematicas)">
+        <MappingFragment StoreEntitySet="ComentariosProblematicasSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TutoriasAcademicasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.TutoriasAcademicas)">
+        <MappingFragment StoreEntitySet="TutoriasAcademicasSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDeSesion" ColumnName="NumeroDeSesion" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeriodoEscolarSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.PeriodoEscolar)">
+        <MappingFragment StoreEntitySet="PeriodoEscolarSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsistenciaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Asistencia)">
+        <MappingFragment StoreEntitySet="AsistenciaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Presente" ColumnName="Presente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramaEducativoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ProgramaEducativo)">
+        <MappingFragment StoreEntitySet="ProgramaEducativoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdministradorSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Administrador)">
+        <MappingFragment StoreEntitySet="AdministradorSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasPeriodoEscolar" TypeName="EntityDataModel.TutoriasAcademicasPeriodoEscolar" StoreEntitySet="TutoriasAcademicasSet">
+      <EndProperty Name="PeriodoEscolar">
+        <ScalarProperty Name="Id" ColumnName="PeriodoEscolar_Id" />
+      </EndProperty>
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProblematicaAcademicaComentariosProblematicas" TypeName="EntityDataModel.ProblematicaAcademicaComentariosProblematicas" StoreEntitySet="ComentariosProblematicasSet">
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="ProblematicaAcademica_Id" />
+      </EndProperty>
+      <EndProperty Name="ComentariosProblematicas">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProblematicaAcademicaExperienciaEducativa" TypeName="EntityDataModel.ProblematicaAcademicaExperienciaEducativa" StoreEntitySet="ProblematicaAcademicaSet">
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="ExperienciaEducativa_Id" />
+      </EndProperty>
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoEstudiante" TypeName="EntityDataModel.ProgramaEducativoEstudiante" StoreEntitySet="EstudianteSet">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasProblematicaAcademica" TypeName="EntityDataModel.TutoriasAcademicasProblematicaAcademica" StoreEntitySet="ProblematicaAcademicaSet">
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="TutoriasAcademicas_Id" />
+      </EndProperty>
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PeriodoEscolarProgramaEducativo" TypeName="EntityDataModel.PeriodoEscolarProgramaEducativo" StoreEntitySet="ProgramaEducativoSet">
+      <EndProperty Name="PeriodoEscolar">
+        <ScalarProperty Name="Id" ColumnName="PeriodoEscolar_Id" />
+      </EndProperty>
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasAsistencia" TypeName="EntityDataModel.TutoriasAcademicasAsistencia" StoreEntitySet="AsistenciaSet">
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="TutoriasAcademicas_Id" />
+      </EndProperty>
+      <EndProperty Name="Asistencia">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProfesorEstudiante" TypeName="EntityDataModel.ProfesorEstudiante" StoreEntitySet="EstudianteSet">
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Tutor_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoExperienciaEducativa" TypeName="EntityDataModel.ProgramaEducativoExperienciaEducativa" StoreEntitySet="ExperienciaEducativaSet">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="AsistenciaEstudiante" TypeName="EntityDataModel.AsistenciaEstudiante" StoreEntitySet="AsistenciaEstudiante">
+      <EndProperty Name="Asistencia">
+        <ScalarProperty Name="Id" ColumnName="Asistencia_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Estudiante_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ExperienciaEducativaSet">
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
+      </EndProperty>
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoProfesor" TypeName="EntityDataModel.ProgramaEducativoProfesor" StoreEntitySet="ProgramaEducativoProfesor">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
