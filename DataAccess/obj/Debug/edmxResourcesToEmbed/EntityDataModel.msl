@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityDataModelStoreContainer" CdmEntityContainer="EntityDataModelContainer">
+    <EntitySetMapping Name="EstudianteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Estudiante)">
+        <MappingFragment StoreEntitySet="EstudianteSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
+          <ScalarProperty Name="CorreoInstitucional" ColumnName="CorreoInstitucional" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfesorSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Profesor)">
+        <MappingFragment StoreEntitySet="ProfesorSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDePersonal" ColumnName="NumeroDePersonal" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
+          <ScalarProperty Name="CorreoInstitucional" ColumnName="CorreoInstitucional" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EsTutor" ColumnName="EsTutor" />
+          <ScalarProperty Name="EsCoordinador" ColumnName="EsCoordinador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExperienciaEducativaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ExperienciaEducativa)">
+        <MappingFragment StoreEntitySet="ExperienciaEducativaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nrc" ColumnName="Nrc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProblematicaAcademicaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ProblematicaAcademica)">
+        <MappingFragment StoreEntitySet="ProblematicaAcademicaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="NumeroIncidencias" ColumnName="NumeroIncidencias" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComentariosProblematicasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ComentariosProblematicas)">
+        <MappingFragment StoreEntitySet="ComentariosProblematicasSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TutoriasAcademicasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.TutoriasAcademicas)">
+        <MappingFragment StoreEntitySet="TutoriasAcademicasSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDeSesion" ColumnName="NumeroDeSesion" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeriodoEscolarSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.PeriodoEscolar)">
+        <MappingFragment StoreEntitySet="PeriodoEscolarSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsistenciaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Asistencia)">
+        <MappingFragment StoreEntitySet="AsistenciaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Presente" ColumnName="Presente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramaEducativoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.ProgramaEducativo)">
+        <MappingFragment StoreEntitySet="ProgramaEducativoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdministradorSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Administrador)">
+        <MappingFragment StoreEntitySet="AdministradorSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasPeriodoEscolar" TypeName="EntityDataModel.TutoriasAcademicasPeriodoEscolar" StoreEntitySet="TutoriasAcademicasSet">
+      <EndProperty Name="PeriodoEscolar">
+        <ScalarProperty Name="Id" ColumnName="PeriodoEscolar_Id" />
+      </EndProperty>
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProblematicaAcademicaComentariosProblematicas" TypeName="EntityDataModel.ProblematicaAcademicaComentariosProblematicas" StoreEntitySet="ComentariosProblematicasSet">
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="ProblematicaAcademica_Id" />
+      </EndProperty>
+      <EndProperty Name="ComentariosProblematicas">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProblematicaAcademicaExperienciaEducativa" TypeName="EntityDataModel.ProblematicaAcademicaExperienciaEducativa" StoreEntitySet="ProblematicaAcademicaSet">
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="ExperienciaEducativa_Id" />
+      </EndProperty>
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoEstudiante" TypeName="EntityDataModel.ProgramaEducativoEstudiante" StoreEntitySet="EstudianteSet">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasProblematicaAcademica" TypeName="EntityDataModel.TutoriasAcademicasProblematicaAcademica" StoreEntitySet="ProblematicaAcademicaSet">
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="TutoriasAcademicas_Id" />
+      </EndProperty>
+      <EndProperty Name="ProblematicaAcademica">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PeriodoEscolarProgramaEducativo" TypeName="EntityDataModel.PeriodoEscolarProgramaEducativo" StoreEntitySet="ProgramaEducativoSet">
+      <EndProperty Name="PeriodoEscolar">
+        <ScalarProperty Name="Id" ColumnName="PeriodoEscolar_Id" />
+      </EndProperty>
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TutoriasAcademicasAsistencia" TypeName="EntityDataModel.TutoriasAcademicasAsistencia" StoreEntitySet="AsistenciaSet">
+      <EndProperty Name="TutoriasAcademicas">
+        <ScalarProperty Name="Id" ColumnName="TutoriasAcademicas_Id" />
+      </EndProperty>
+      <EndProperty Name="Asistencia">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProfesorEstudiante" TypeName="EntityDataModel.ProfesorEstudiante" StoreEntitySet="EstudianteSet">
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Tutor_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoExperienciaEducativa" TypeName="EntityDataModel.ProgramaEducativoExperienciaEducativa" StoreEntitySet="ExperienciaEducativaSet">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="AsistenciaEstudiante" TypeName="EntityDataModel.AsistenciaEstudiante" StoreEntitySet="AsistenciaEstudiante">
+      <EndProperty Name="Asistencia">
+        <ScalarProperty Name="Id" ColumnName="Asistencia_Id" />
+      </EndProperty>
+      <EndProperty Name="Estudiante">
+        <ScalarProperty Name="Id" ColumnName="Estudiante_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ExperienciaEducativaSet">
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
+      </EndProperty>
+      <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProgramaEducativoProfesor" TypeName="EntityDataModel.ProgramaEducativoProfesor" StoreEntitySet="ProgramaEducativoProfesor">
+      <EndProperty Name="ProgramaEducativo">
+        <ScalarProperty Name="Id" ColumnName="ProgramaEducativo_Id" />
+      </EndProperty>
+      <EndProperty Name="Profesor">
+        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
