@@ -28,3 +28,6 @@ C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\De
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.exe
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\bin\Debug\es-MX\SistemaDeGestionDeTutorias.resources.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.Properties.Resources.es-MX.resources
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\es-MX\SistemaDeGestionDeTutorias.resources.dll

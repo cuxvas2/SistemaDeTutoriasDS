@@ -4,14 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SistemaDeGestionDeTutorias"
+        xmlns:properties="clr-namespace:SistemaDeGestionDeTutorias.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Viewbox Width="800" Stretch="UniformToFill"  StretchDirection="Both">
-        <Grid Height="450" Width="800">
-            <Frame Height="400" Width="800" Background="Black" Margin="0,50,0,0">
+        Title="MainWindow" Height="450" Width="800"
+        FontSize="16">
+    <Viewbox Stretch="Fill" StretchDirection="Both">
+        <Canvas Height="450" Width="800">
+            <Image Height="450" Width="385" Source="Imagenes/UV_LOGO.png"/>
+            <Label Content="{x:Static properties:Resources.LblUsuarioCorreoElectronicoInstitucionalString}" Canvas.Left="429" Canvas.Top="44"/>
+            <Label Content="{x:Static properties:Resources.LblPasswordString}" Canvas.Left="429" Canvas.Top="152"/>
+            <TextBox Height="37" Canvas.Left="429" TextWrapping="Wrap" Canvas.Top="92" Width="294"/>
+            <PasswordBox Canvas.Left="429" Canvas.Top="207" Width="294" Height="47"/>
+            <Button Content="{x:Static properties:Resources.BtnIniciarSesionString}" Height="44" Canvas.Left="497" Canvas.Top="285" Width="160"/>
+            <Label Content="LblError" Canvas.Left="429" Canvas.Top="364" Width="294"/>
 
-            </Frame>
-        </Grid>
+        </Canvas>
     </Viewbox>
 
 </Window>

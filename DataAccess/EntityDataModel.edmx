@@ -174,7 +174,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Usuario" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorreoPersonal" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="AsistenciaEstudiante">
@@ -586,7 +586,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Usuario" Type="String" Nullable="false" />
+          <Property Name="CorreoPersonal" Type="String" Nullable="false" />
           <Property Name="Password" Type="String" Nullable="false" />
         </EntityType>
       </Schema>
@@ -692,7 +692,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Administrador)">
         <MappingFragment StoreEntitySet="AdministradorSet">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
           <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>

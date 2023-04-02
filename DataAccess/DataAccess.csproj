@@ -56,7 +56,6 @@
     <Compile Include="Asistencia.cs">
       <DependentUpon>EntityDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="ComentariosProblematicas.cs">
       <DependentUpon>EntityDataModel.tt</DependentUpon>
     </Compile>

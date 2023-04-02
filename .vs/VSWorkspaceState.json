@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PruebasDeUnidad",
+    "\\SistemaDeGestionDeTutorias",
+    "\\SistemaDeGestionDeTutorias\\Utilidades"
   ],
-  "SelectedNode": "\\SistemaDeGestionDeTutorias.sln",
+  "SelectedNode": "\\PruebasDeUnidad\\ValidadorCasosExitosos.cs",
   "PreviewInSolutionExplorer": false
 }

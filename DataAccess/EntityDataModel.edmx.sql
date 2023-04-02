@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 03/18/2023 23:56:36
--- Generated from EDMX file: C:\Users\Acer\source\repos\SistemaDeGestionDeTutorias\DataAccess\EntityDataModel.edmx
+-- Date Created: 04/01/2023 21:05:00
+-- Generated from EDMX file: C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\EntityDataModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -202,7 +202,7 @@ GO
 -- Creating table 'AdministradorSet'
 CREATE TABLE [dbo].[AdministradorSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Usuario] nvarchar(max)  NOT NULL,
+    [CorreoPersonal] nvarchar(max)  NOT NULL,
     [Password] nvarchar(max)  NOT NULL
 );
 GO
