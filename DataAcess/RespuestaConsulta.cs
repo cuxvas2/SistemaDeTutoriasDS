@@ -15,6 +15,7 @@ namespace DataAccess
         OperacionInvalida,
         ErrorDesconocido
     }
+
     public class RespuestaConsulta<T>
     {
         public ResultadoConsulta ResultadoConsulta { get; set; }
