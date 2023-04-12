@@ -24,5 +24,25 @@ namespace SistemaDeGestionDeTutorias
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private async void btnIniciarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            string entrada = txtUsuario.Text;
+            if (entrada.StartsWith("@"))
+            {
+                DataAccess.RespuestaConsulta<DataModel.Administrador> respuesta = await DataAccess.LoginManager.BuscarAministradorPorUsuarioAsync(entrada);
+                Utilidades.ManejadorDeExcepcionesEntity.HayExcepcionesEntity(respuesta);
+            }
+            else
+            {
+                //To do 
+            }
+
+        }
     }
 }

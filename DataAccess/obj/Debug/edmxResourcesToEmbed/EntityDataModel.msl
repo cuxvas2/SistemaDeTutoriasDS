@@ -98,7 +98,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Administrador)">
         <MappingFragment StoreEntitySet="AdministradorSet">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
           <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>

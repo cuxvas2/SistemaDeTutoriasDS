@@ -11,23 +11,63 @@ namespace SistemaDeGestionDeTutorias.Utilidades
     {
         public static void MostrarGuardadoExitoso()
         {
-            MessageBox.Show("Guardado Exitoso", "Guardado exitoso",MessageBoxButton.OK,MessageBoxImage.Information);
+            MessageBox.Show(
+                "Guardado exitoso",
+                "Guardado Exitoso",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
         }
-        public static void MostrarErrorBD()
+        public static void MostrarErrorConexionBD()
         {
-            MessageBox.Show("Error En Base de datos", "Error En Base de datos", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(
+                "No hay conexion a base de datos",
+                "Error En Base de datos",
+                MessageBoxButton.OK, 
+                MessageBoxImage.Error);
         }
+        public static void MostrarOperacionNoValidaBD()
+        {
+            MessageBox.Show(
+                "No se puede llevar a cabo esa operacion en base de datos",
+                "Error En Base de datos",
+                MessageBoxButton.OK, 
+                MessageBoxImage.Error);
+        }
+        public static void MostrarErrorEscrituraLecturaBD()
+        {
+            MessageBox.Show(
+                "Error de lectura/escritura en la base de datos",
+                "Error En Base de datos",
+                MessageBoxButton.OK, 
+                MessageBoxImage.Error);
+        }
+
+        public static void MostrarErrorDesconocidoBD(string _mensajeExcepcion)
+        {
+            MessageBox.Show(
+                "Error Desconocido En Base de datos: " + 
+                _mensajeExcepcion,
+                "Error En Base de datos",
+                MessageBoxButton.OK, 
+                MessageBoxImage.Error);
+        }
+        public static void MostrarErrorInesperado()
+        {
+            MessageBox.Show(
+                "Error inesperado, excepcion no contemplada " ,
+                "Error En sistema",
+                MessageBoxButton.OK, 
+                MessageBoxImage.Error);
+        }
+
         public static bool MostrarCofirmacionCancelar()
         {
-            MessageBoxResult messageResult = MessageBox.Show("Perdera todo el progreso no guardado", "Confirmar cancelacion? ", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            if(messageResult == MessageBoxResult.Yes)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            MessageBoxResult messageResult = MessageBox.Show(
+                "Confirmar cancelacion? ",
+                "Perdera todo el progreso no guardado",
+                MessageBoxButton.YesNo, 
+                MessageBoxImage.Warning);
+            return messageResult == MessageBoxResult.Yes ? true : false;
         }
     }
 }

@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/01/2023 21:05:00
+-- Date Created: 04/11/2023 18:38:21
 -- Generated from EDMX file: C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\EntityDataModel.edmx
 -- --------------------------------------------------
 
@@ -202,7 +202,7 @@ GO
 -- Creating table 'AdministradorSet'
 CREATE TABLE [dbo].[AdministradorSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [CorreoPersonal] nvarchar(max)  NOT NULL,
+    [Usuario] nvarchar(max)  NOT NULL,
     [Password] nvarchar(max)  NOT NULL
 );
 GO

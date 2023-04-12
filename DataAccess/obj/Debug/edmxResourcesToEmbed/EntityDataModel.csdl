@@ -221,7 +221,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Usuario" Type="String" Nullable="false" />
+    <Property Name="CorreoPersonal" Type="String" Nullable="false" />
     <Property Name="Password" Type="String" Nullable="false" />
   </EntityType>
 </Schema>

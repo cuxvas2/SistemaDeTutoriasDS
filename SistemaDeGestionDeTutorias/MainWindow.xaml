@@ -12,11 +12,18 @@
         <Canvas Height="450" Width="800">
             <Image Height="450" Width="385" Source="Imagenes/UV_LOGO.png"/>
             <Label Content="{x:Static properties:Resources.LblUsuarioCorreoElectronicoInstitucionalString}" Canvas.Left="429" Canvas.Top="44"/>
-            <Label Content="{x:Static properties:Resources.LblPasswordString}" Canvas.Left="429" Canvas.Top="152"/>
-            <TextBox Height="37" Canvas.Left="429" TextWrapping="Wrap" Canvas.Top="92" Width="294"/>
-            <PasswordBox Canvas.Left="429" Canvas.Top="207" Width="294" Height="47"/>
-            <Button Content="{x:Static properties:Resources.BtnIniciarSesionString}" Height="44" Canvas.Left="497" Canvas.Top="285" Width="160"/>
-            <Label Content="LblError" Canvas.Left="429" Canvas.Top="364" Width="294"/>
+            <Label Content="{x:Static properties:Resources.LblPasswordString}" Canvas.Left="429" Canvas.Top="171"/>
+            <TextBox x:Name="txtUsuario" Height="47" Canvas.Left="429" VerticalContentAlignment="Center" TextWrapping="Wrap" Canvas.Top="80" Width="294"/>
+            <PasswordBox x:Name="pwdPassword" Canvas.Left="429" Canvas.Top="207" Width="294" Height="47" VerticalContentAlignment="Center"/>
+            <Button Content="{x:Static properties:Resources.BtnIniciarSesionString}" Height="44" Canvas.Left="497" Click="btnIniciarSesion_Click" Canvas.Top="285" Width="160" BorderBrush="{x:Null}" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9CC9C5" Offset="1"/>
+                        <GradientStop Color="#FF11EEDA"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="lblStatus" Content="Escriba aqui el Error" HorizontalContentAlignment="Center" Canvas.Left="429" Canvas.Top="364" Width="294"/>
 
         </Canvas>
     </Viewbox>

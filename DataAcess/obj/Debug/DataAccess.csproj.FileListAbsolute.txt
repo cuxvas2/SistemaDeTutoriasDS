@@ -1,0 +1,15 @@
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.dll.config
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.dll.config
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.xml
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.pdb

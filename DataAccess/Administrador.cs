@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DataAccess
+namespace DataModel
 {
     using System;
     using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace DataAccess
     public partial class Administrador
     {
         public int Id { get; set; }
-        public string CorreoPersonal { get; set; }
+        public string Usuario { get; set; }
         public string Password { get; set; }
     }
 }
