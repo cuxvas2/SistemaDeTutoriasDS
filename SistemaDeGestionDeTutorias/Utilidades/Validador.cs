@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SistemaDeGestionDeTutorias.Utilidades
@@ -10,14 +11,12 @@ namespace SistemaDeGestionDeTutorias.Utilidades
     {
         public static bool EsCorreoElectronicoValido(string correo)
         {
-            if (correo.Length == 0) { return false; }
-            if (correo.Contains(" ")) { return false; }
-            if (!correo.Contains("@")) { return false; }
-            if (correo.StartsWith("@")) { return false; }
-            String[] emailParts = correo.Split('@');
-            if (emailParts[0].Length == 0) { return false; }
-            if (!emailParts[1].Contains('.')) { return false; }
-            return true;
+            bool esValido = false;
+            if (!Regex.IsMatch(correo, @"^[a-zA-Z][\w\.-][a-zA-Z0-9]@[a-zA-Z0-9][\w\.-][a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            {
+                esValido = true;
+            }
+            return esValido;
         }
         public static bool EsCorreoInstitucionalProfesorValido(string correo)
         {
