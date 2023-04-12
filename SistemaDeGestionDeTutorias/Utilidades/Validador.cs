@@ -20,9 +20,14 @@ namespace SistemaDeGestionDeTutorias.Utilidades
         }
         public static bool EsCorreoInstitucionalProfesorValido(string correo)
         {
-            if (!EsCorreoElectronicoValido(correo)) { return false; }
-            if (!correo.EndsWith("profesores.uv.mx")) { return false; }
-            return true;
+            bool esValido = false;
+            if (EsCorreoElectronicoValido(correo) &&
+                correo.EndsWith("profesores.uv.mx")) 
+            { 
+                esValido = true; 
+            }
+            
+            return esValido;
         }
         public static bool EsCorreoInstitucionalEstudianteValido(string correo)
         {
