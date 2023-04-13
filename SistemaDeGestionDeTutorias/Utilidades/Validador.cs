@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -11,12 +12,7 @@ namespace SistemaDeGestionDeTutorias.Utilidades
     {
         public static bool EsCorreoElectronicoValido(string correo)
         {
-            bool esValido = false;
-            if (!Regex.IsMatch(correo, @"^[a-zA-Z][\w\.-][a-zA-Z0-9]@[a-zA-Z0-9][\w\.-][a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-            {
-                esValido = true;
-            }
-            return esValido;
+            return Regex.IsMatch(correo, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
         public static bool EsCorreoInstitucionalProfesorValido(string correo)
         {
