@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    class ManejadorDeDocumentos
+    public static class ManejadorDeDocumentos
     {
+        public static List<DataModel.Estudiante> ExtraerEstudiantesDesdeDocumentoExcel(string rutaDocumento)
+        {
+            List<DataModel.Estudiante> estudiantes = new List<DataModel.Estudiante>();
+            return estudiantes;
+        }
     }
 }
