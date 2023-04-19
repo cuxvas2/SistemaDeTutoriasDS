@@ -103,6 +103,7 @@
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsTutor" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsCoordinador" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EsJefeCarrera" Type="bit" Nullable="true" />
   </EntityType>
   <EntityType Name="ExperienciaEducativaSet">
     <Key>
@@ -457,6 +458,7 @@
           <Property Name="Password" Type="String" Nullable="false" />
           <Property Name="EsTutor" Type="String" Nullable="false" />
           <Property Name="EsCoordinador" Type="String" Nullable="false" />
+          <Property Name="EsJefeCarrera" Type="Boolean" Nullable="true" />
         </EntityType>
         <EntityType Name="ExperienciaEducativa">
           <Key>
@@ -621,6 +623,7 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="EsTutor" ColumnName="EsTutor" />
           <ScalarProperty Name="EsCoordinador" ColumnName="EsCoordinador" />
+          <ScalarProperty Name="EsJefeCarrera" ColumnName="EsJefeCarrera" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
