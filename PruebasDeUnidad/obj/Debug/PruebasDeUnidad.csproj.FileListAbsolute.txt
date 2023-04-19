@@ -27,3 +27,5 @@ C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\obj\Debug\Pruebas
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\obj\Debug\PruebasDeUnidad.csproj.CopyComplete
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\obj\Debug\PruebasDeUnidad.dll
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\obj\Debug\PruebasDeUnidad.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\bin\Debug\Aspose.Cells.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\PruebasDeUnidad\bin\Debug\Aspose.Cells.xml

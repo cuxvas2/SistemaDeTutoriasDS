@@ -49,17 +49,23 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenejadorDeDocumentosCasosExitosos.cs" />
     <Compile Include="ValidadorCasosFallidos.cs" />
     <Compile Include="ValidadorCasosExitosos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Estudiantes.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataModel.csproj">
       <Project>{3c9a6e32-7f2d-44e5-9fd7-96749b5641d8}</Project>
       <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAcess\DataAccess.csproj">
+      <Project>{4e46275f-ddc3-4fe0-afea-062d04697da6}</Project>
+      <Name>DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias.csproj">
       <Project>{03562c0e-392d-4bc2-b859-bdc4ec6f7f5f}</Project>

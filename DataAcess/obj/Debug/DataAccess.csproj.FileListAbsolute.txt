@@ -13,3 +13,5 @@ C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.cs
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.dll
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\Aspose.Cells.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAcess\bin\Debug\Aspose.Cells.xml

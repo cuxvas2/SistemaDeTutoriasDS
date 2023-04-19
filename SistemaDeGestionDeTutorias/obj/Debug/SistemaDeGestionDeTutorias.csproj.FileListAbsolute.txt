@@ -42,3 +42,5 @@ C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\De
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.CopyComplete
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.exe
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.pdb
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.dll
+C:\Users\Acer\source\repos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.xml
