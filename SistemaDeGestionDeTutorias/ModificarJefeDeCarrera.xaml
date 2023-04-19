@@ -1,0 +1,39 @@
+﻿<Page x:Class="SistemaDeGestionDeTutorias.ModificarJefeDeCarrera"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaDeGestionDeTutorias"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ModificarJefeDeCarrera">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ListView x:Name="JefesDeCarrera" Margin="10,70,0,20">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Nombre" Grid.Column="1" HorizontalAlignment="Left" Margin="100,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido paterno" Grid.Column="1" HorizontalAlignment="Left" Margin="100,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido materno" Grid.Column="1" HorizontalAlignment="Left" Margin="100,207,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextNombre" Grid.Column="2" HorizontalAlignment="Left" Margin="0,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="21"/>
+        <TextBlock x:Name="TextApellidoPaterno" Grid.Column="2" HorizontalAlignment="Left" Margin="0,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="21"/>
+        <TextBlock x:Name="TextApellidoMaterno" Grid.Column="2" HorizontalAlignment="Left" Margin="0,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="24"/>
+        <Label Grid.Column="1" Content="Correo" HorizontalAlignment="Left" Margin="100,277,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Número de identificación" HorizontalAlignment="Left" Margin="100,337,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextCorreo" Grid.Column="2" HorizontalAlignment="Left" Margin="0,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="21"/>
+        <TextBlock x:Name="TextNumeroIdentificacion" Grid.Column="2" HorizontalAlignment="Left" Margin="0,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="18"/>
+
+    </Grid>
+</Page>

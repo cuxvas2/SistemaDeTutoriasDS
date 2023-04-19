@@ -98,6 +98,7 @@
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsTutor" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsCoordinador" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EsJefeCarrera" Type="bit" Nullable="true" />
   </EntityType>
   <EntityType Name="ExperienciaEducativaSet">
     <Key>
@@ -169,7 +170,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="CorreoPersonal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Usuario" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="AsistenciaEstudiante">

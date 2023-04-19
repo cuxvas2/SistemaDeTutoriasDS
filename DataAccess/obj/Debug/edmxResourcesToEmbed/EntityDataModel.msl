@@ -27,6 +27,7 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="EsTutor" ColumnName="EsTutor" />
           <ScalarProperty Name="EsCoordinador" ColumnName="EsCoordinador" />
+          <ScalarProperty Name="EsJefeCarrera" ColumnName="EsJefeCarrera" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -98,7 +99,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(EntityDataModel.Administrador)">
         <MappingFragment StoreEntitySet="AdministradorSet">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="CorreoPersonal" ColumnName="CorreoPersonal" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
           <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
