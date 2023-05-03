@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\App.xaml
-3472924967
+101515841840
 
-121542557526
-19-1791025966
-GestionarProgramaEducativo.xaml;MainWindow.xaml;ModificarJefeDeCarrera.xaml;
+20-381015962
+17824569352
+MainWindow.xaml;ModificarJefeDeCarrera.xaml;View\Estudiantes.xaml;View\Home.xaml;View\MenuEstudiantes.xaml;View\ModificarEstudiante.xaml;View\ModificarProfesor.xaml;View\NuevoEstudiante.xaml;View\NuevoProfesor.xaml;View\Tutores.xaml;
 
-False
+True
 

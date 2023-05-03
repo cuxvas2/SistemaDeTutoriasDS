@@ -18,7 +18,7 @@ namespace SistemaDeGestionDeTutorias.Utilidades
         {
             bool esValido = false;
             if (EsCorreoElectronicoValido(correo) &&
-                correo.EndsWith("profesores.uv.mx")) 
+                correo.EndsWith("uv.mx")) 
             { 
                 esValido = true; 
             }
@@ -31,7 +31,7 @@ namespace SistemaDeGestionDeTutorias.Utilidades
             if (!correo.EndsWith("estudiantes.uv.mx")) { return false; }
             return true;
         }
-        public static bool EsApellidoValido(string apellido)
+        public static bool EsStringValido(string apellido)
         {
             if (apellido.Length == 0) { return false; }
             if (!apellido.Any(c => char.IsLetter(c))) { return false; }

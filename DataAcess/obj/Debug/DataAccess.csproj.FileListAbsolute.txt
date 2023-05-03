@@ -28,5 +28,25 @@ C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\bin\Debug\EntityFrame
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\obj\Debug\DataAccess.dll
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\obj\Debug\DataAccess.pdb
+<<<<<<< HEAD
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\bin\Debug\Aspose.Cells.dll
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAcess\bin\Debug\Aspose.Cells.xml
+=======
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.dll.config
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataAccess.pdb
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\Aspose.Cells.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.pdb
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\DataModel.dll.config
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\Aspose.Cells.xml
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.xml
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.dll
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\DataAcess\obj\Debug\DataAccess.pdb
+>>>>>>> 3deedd155098a568f6d33b5664f6e8f6c1b6a861

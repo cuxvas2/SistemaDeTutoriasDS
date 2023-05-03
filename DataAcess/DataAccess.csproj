@@ -54,10 +54,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="JefesCarrreraManager.cs" />
     <Compile Include="LoginManager.cs" />
     <Compile Include="ManejadorDeDocumentos.cs" />
     <Compile Include="ProgramaEducativoManager.cs" />
+=======
+    <Compile Include="EstudianteManager.cs" />
+    <Compile Include="LoginManager.cs" />
+    <Compile Include="ManejadorDeDocumentos.cs" />
+    <Compile Include="ProfesorManager.cs" />
+>>>>>>> 3deedd155098a568f6d33b5664f6e8f6c1b6a861
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RespuestaConsulta.cs" />
   </ItemGroup>

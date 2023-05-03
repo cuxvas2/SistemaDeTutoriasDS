@@ -1,0 +1,62 @@
+﻿<Window x:Class="SistemaDeGestionDeTutorias.View.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="450" Width="900">
+    <Grid Background="#FF03335E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0" Height="365" Width="52" Background="#FF03335E">
+            <Button x:Name="botonEstudiantes" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonEstudiantes_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/1.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonProfesores" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonProfesores_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/2.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonTutores" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonTutores_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/3.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonExperiencias" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonExperiencias_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/4.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonProgramas" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonProgramas_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/5.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonAsistencias" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonAsistencias_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/6.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonTutorias" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonTutorias_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/7.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="botonReportes" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="40" Height="40" Click="botonReportes_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagenes/8.png"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+        <Frame x:Name="frame" Grid.Column="1" Background="White"/>
+    </Grid>
+</Window>

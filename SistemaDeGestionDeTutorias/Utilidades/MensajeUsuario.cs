@@ -70,13 +70,49 @@ namespace SistemaDeGestionDeTutorias.Utilidades
             return messageResult == MessageBoxResult.Yes ? true : false;
         }
 
-        public static void MostrarCamposVacios()
+        public static void CamposVacios()
         {
             MessageBox.Show(
-                "No pude dejar campos vacios, verifique y vuelva a intentar",
-                "Campos vacios",
+                "No se damiten campos vacios ",
+                "Error",
                 MessageBoxButton.OK,
-                MessageBoxImage.Stop);
+                MessageBoxImage.Error);
+        }
+
+        public static void DatosNoValidos()
+        {
+            MessageBox.Show(
+                "Revisa por favor tus datos ingresados",
+                "Error",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error);
+        }
+
+        public static void MatriculaExistente()
+        {
+            MessageBox.Show(
+                "La matricula ya ha sido registrada",
+                "Error",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error);
+        }
+
+        public static void SinSeleccionar()
+        {
+            MessageBox.Show(
+                "Selecciona una opcion",
+                "Error",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error);
+        }
+
+        public static void EliminacionExitosa()
+        {
+            MessageBox.Show(
+                "Eliminacion exitosa",
+                "Eliminacion Exitosa",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
         }
     }
 }

@@ -99,6 +99,7 @@
     <Property Name="EsTutor" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsCoordinador" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsJefeCarrera" Type="bit" Nullable="true" />
+    <Property Name="ExperienciaEducativa_Id" Type="int" Nullable="true" />
   </EntityType>
   <EntityType Name="ExperienciaEducativaSet">
     <Key>
@@ -108,7 +109,6 @@
     <Property Name="Nrc" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProgramaEducativo_Id" Type="int" Nullable="false" />
-    <Property Name="Profesor_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ProblematicaAcademicaSet">
     <Key>
@@ -298,14 +298,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="ExperienciaEducativaProfesor">
-    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="*" />
-    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="1" />
+    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="0..1" />
+    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Profesor">
+      <Principal Role="ExperienciaEducativa">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="ExperienciaEducativa">
-        <PropertyRef Name="Profesor_Id" />
+      <Dependent Role="Profesor">
+        <PropertyRef Name="ExperienciaEducativa_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

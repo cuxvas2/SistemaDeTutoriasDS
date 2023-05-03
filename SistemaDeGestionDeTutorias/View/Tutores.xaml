@@ -1,0 +1,44 @@
+﻿<Page x:Class="SistemaDeGestionDeTutorias.View.Profesores"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaDeGestionDeTutorias"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Tutores">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"></RowDefinition>
+            <RowDefinition Height="42"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="42"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <DataGrid Name="DG" AutoGenerateColumns="False" IsReadOnly="True" Grid.Column="0" Grid.Row="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No.Personal" Binding="{Binding Path = NumeroDePersonal}" MaxWidth="100" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nombre"  Binding="{Binding Path = Nombres}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Apellido Paterno"  Binding="{Binding Path = ApellidoPaterno}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Apellido Materno"  Binding="{Binding Path = ApellidoMaterno}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Correo Institucional"  Binding="{Binding Path = CorreoInstitucional}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Correo Personal"  Binding="{Binding Path = CorreoPersonal}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Es tutor"  Binding="{Binding Path = EsTutor}" CanUserResize="False" Width="55"></DataGridTextColumn>
+                <DataGridTextColumn Header="Es coordinador"  Binding="{Binding Path = EsCoordinador}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Es jefe de carrera"  Binding="{Binding Path = EsJefeCarrera}" CanUserResize="False" Width="Auto"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBox x:Name="NumeroDePersonal" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Numero De Personal" VerticalAlignment="Center" Width="304"/>
+        <Button x:Name="BotonBuscar" Content="BUSCAR" HorizontalAlignment="Left" Margin="330,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="95" Click="BotonBuscar_Click"/>
+        <Button x:Name="BotonEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="566,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="70" Click="BotonEliminar_Click"/>
+        <Button x:Name="BotonNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="713,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="70" Click="BotonNuevo_Click"/>
+        <Button x:Name="BotonModificar" Content="Modificar" HorizontalAlignment="Left" Margin="641,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="67" Click="BotonModificar_Click"/>
+
+    </Grid>
+</Page>

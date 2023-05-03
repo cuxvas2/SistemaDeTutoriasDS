@@ -104,6 +104,7 @@
     <Property Name="EsTutor" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsCoordinador" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EsJefeCarrera" Type="bit" Nullable="true" />
+    <Property Name="ExperienciaEducativa_Id" Type="int" Nullable="true" />
   </EntityType>
   <EntityType Name="ExperienciaEducativaSet">
     <Key>
@@ -113,7 +114,6 @@
     <Property Name="Nrc" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProgramaEducativo_Id" Type="int" Nullable="false" />
-    <Property Name="Profesor_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ProblematicaAcademicaSet">
     <Key>
@@ -303,14 +303,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="ExperienciaEducativaProfesor">
-    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="*" />
-    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="1" />
+    <End Role="ExperienciaEducativa" Type="EntityDataModel.Store.ExperienciaEducativaSet" Multiplicity="0..1" />
+    <End Role="Profesor" Type="EntityDataModel.Store.ProfesorSet" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Profesor">
+      <Principal Role="ExperienciaEducativa">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="ExperienciaEducativa">
-        <PropertyRef Name="Profesor_Id" />
+      <Dependent Role="Profesor">
+        <PropertyRef Name="ExperienciaEducativa_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -576,8 +576,8 @@
           <End Type="EntityDataModel.Estudiante" Role="Estudiante" Multiplicity="*" />
         </Association>
         <Association Name="ExperienciaEducativaProfesor">
-          <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="1" />
-          <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="1" />
+          <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="0..1" />
+          <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="0..1" />
         </Association>
         <Association Name="ProgramaEducativoProfesor">
           <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="*" />
@@ -780,13 +780,14 @@
         <ScalarProperty Name="Id" ColumnName="Estudiante_Id" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ExperienciaEducativaSet">
-      <EndProperty Name="Profesor">
-        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
-      </EndProperty>
+    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ProfesorSet">
       <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="ExperienciaEducativa_Id" />
+      </EndProperty>
+      <EndProperty Name="Profesor">
         <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
+      <Condition ColumnName="ExperienciaEducativa_Id" IsNull="false" />
     </AssociationSetMapping>
     <AssociationSetMapping Name="ProgramaEducativoProfesor" TypeName="EntityDataModel.ProgramaEducativoProfesor" StoreEntitySet="ProgramaEducativoProfesor">
       <EndProperty Name="ProgramaEducativo">
