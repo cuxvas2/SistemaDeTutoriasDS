@@ -74,3 +74,7 @@ C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.pdb
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\ModificarJefeDeCarrera.g.cs
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\ModificarJefeDeCarrera.baml
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.dll
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.xml
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\GestionarProgramaEducativo.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\GestionarProgramaEducativo.baml
