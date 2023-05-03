@@ -131,3 +131,12 @@ C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutoria
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\es-MX\SistemaDeGestionDeTutorias.resources.dll
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.CopyComplete
 >>>>>>> 3deedd155098a568f6d33b5664f6e8f6c1b6a861
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Home.baml
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Estudiantes.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Home.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\MenuEstudiantes.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\ModificarEstudiante.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\ModificarProfesor.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\NuevoEstudiante.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\NuevoProfesor.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Tutores.g.cs

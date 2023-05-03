@@ -10,18 +10,6 @@ C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\obj\Debug\DataModel.cs
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\obj\Debug\DataModel.csproj.CopyComplete
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\obj\Debug\DataModel.dll
 C:\Users\Acer\source\repos\SistemaDeTutoriasDS\DataAccess\obj\Debug\DataModel.pdb
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\DataModel.dll.config
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\DataModel.dll
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\DataModel.pdb
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\EntityFramework.dll
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\EntityFramework.xml
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\obj\Debug\DataModel.csproj.AssemblyReference.cache
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\obj\Debug\DataModel.csproj.CopyComplete
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\obj\Debug\DataModel.dll
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\obj\Debug\DataModel.pdb
 D:\mende\Downloads\SistemaDeTutoriasDS-main (3)\SistemaDeTutoriasDS-main\DataAccess\bin\Debug\DataModel.dll.config
 D:\mende\Downloads\SistemaDeTutoriasDS-main (3)\SistemaDeTutoriasDS-main\DataAccess\bin\Debug\DataModel.dll
 D:\mende\Downloads\SistemaDeTutoriasDS-main (3)\SistemaDeTutoriasDS-main\DataAccess\bin\Debug\DataModel.pdb

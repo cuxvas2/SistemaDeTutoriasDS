@@ -46,7 +46,7 @@ namespace SistemaDeGestionDeTutorias
             else
             {
                 ListViewExperienciasEducativas.Items.Add(Listaexperiencias);
-                MensajeUsuario.MostrarCamposVacios();
+                MensajeUsuario.CamposVacios();
             }
         }
 

@@ -82,7 +82,7 @@ namespace SistemaDeGestionDeTutorias
                 String.IsNullOrEmpty(TextApellidoMaterno.Text) ||
                 String.IsNullOrEmpty(TextCorreo.Text))
             {
-                MensajeUsuario.MostrarCamposVacios();
+                MensajeUsuario.CamposVacios();
                 camposVacios = true;
             }
             return camposVacios;

@@ -67,10 +67,6 @@
       <Project>{4e46275f-ddc3-4fe0-afea-062d04697da6}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias.csproj">
-      <Project>{03562c0e-392d-4bc2-b859-bdc4ec6f7f5f}</Project>
-      <Name>SistemaDeGestionDeTutorias</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
