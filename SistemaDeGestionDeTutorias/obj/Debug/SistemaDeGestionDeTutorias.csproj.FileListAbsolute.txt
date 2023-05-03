@@ -74,6 +74,12 @@ C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.pdb
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\ModificarJefeDeCarrera.g.cs
 C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\ModificarJefeDeCarrera.baml
+<<<<<<< HEAD
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.dll
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\bin\Debug\Aspose.Cells.xml
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\GestionarProgramaEducativo.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\GestionarProgramaEducativo.baml
+=======
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.AssemblyReference.cache
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.SuggestedBindingRedirects.cache
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\View\AsigarTutor.baml
@@ -126,5 +132,18 @@ C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutoria
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.CoreCompileInputs.cache
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\es-MX\SistemaDeGestionDeTutorias.resources.dll
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.exe
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\SistemaDeGestionDeTutorias.pdb
+=======
+>>>>>>> 3deedd155098a568f6d33b5664f6e8f6c1b6a861
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Home.baml
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Estudiantes.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Home.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\MenuEstudiantes.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\ModificarEstudiante.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\ModificarProfesor.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\NuevoEstudiante.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\NuevoProfesor.g.cs
+C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\View\Tutores.g.cs
+>>>>>>> 7f93b04cae87c69c9463066fa954f5dd5ca6ec25

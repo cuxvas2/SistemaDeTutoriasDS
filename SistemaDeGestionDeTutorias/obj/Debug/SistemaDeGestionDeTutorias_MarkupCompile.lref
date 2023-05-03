@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\MainWindow.xaml;;
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\ModificarJefeDeCarrera.xaml;;
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\View\Estudiantes.xaml;;
@@ -10,4 +11,15 @@ FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutori
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\View\NuevoEstudiante.xaml;;
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\View\NuevoProfesor.xaml;;
 FC:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\View\Tutores.xaml;;
+=======
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\MainWindow.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\ModificarJefeDeCarrera.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\Estudiantes.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\MenuEstudiantes.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\ModificarEstudiante.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\ModificarProfesor.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\NuevoEstudiante.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\NuevoProfesor.xaml;;
+FC:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\View\Tutores.xaml;;
+>>>>>>> 7f93b04cae87c69c9463066fa954f5dd5ca6ec25
 
