@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/13/2023 10:47:03
--- Generated from EDMX file: C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\DataAccess\EntityDataModel.edmx
+-- Date Created: 05/02/2023 19:59:54
+-- Generated from EDMX file: D:\mende\Downloads\SistemaDeTutoriasDS-main (3)\SistemaDeTutoriasDS-main\DataAccess\EntityDataModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -51,7 +51,7 @@ IF OBJECT_ID(N'[dbo].[FK_AsistenciaEstudiante_Estudiante]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[AsistenciaEstudiante] DROP CONSTRAINT [FK_AsistenciaEstudiante_Estudiante];
 GO
 IF OBJECT_ID(N'[dbo].[FK_ExperienciaEducativaProfesor]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[ExperienciaEducativaSet] DROP CONSTRAINT [FK_ExperienciaEducativaProfesor];
+    ALTER TABLE [dbo].[ProfesorSet] DROP CONSTRAINT [FK_ExperienciaEducativaProfesor];
 GO
 IF OBJECT_ID(N'[dbo].[FK_ProgramaEducativoProfesor_ProgramaEducativo]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[ProgramaEducativoProfesor] DROP CONSTRAINT [FK_ProgramaEducativoProfesor_ProgramaEducativo];
@@ -131,7 +131,8 @@ CREATE TABLE [dbo].[ProfesorSet] (
     [Password] nvarchar(max)  NOT NULL,
     [EsTutor] nvarchar(max)  NOT NULL,
     [EsCoordinador] nvarchar(max)  NOT NULL,
-    [EsJefeCarrera] bit  NULL
+    [EsJefeCarrera] bit  NULL,
+    [ExperienciaEducativa_Id] int  NULL
 );
 GO
 
@@ -140,8 +141,7 @@ CREATE TABLE [dbo].[ExperienciaEducativaSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Nrc] nvarchar(max)  NOT NULL,
     [Nombre] nvarchar(max)  NOT NULL,
-    [ProgramaEducativo_Id] int  NOT NULL,
-    [Profesor_Id] int  NOT NULL
+    [ProgramaEducativo_Id] int  NOT NULL
 );
 GO
 
@@ -461,19 +461,19 @@ ON [dbo].[AsistenciaEstudiante]
     ([Estudiante_Id]);
 GO
 
--- Creating foreign key on [Profesor_Id] in table 'ExperienciaEducativaSet'
-ALTER TABLE [dbo].[ExperienciaEducativaSet]
+-- Creating foreign key on [ExperienciaEducativa_Id] in table 'ProfesorSet'
+ALTER TABLE [dbo].[ProfesorSet]
 ADD CONSTRAINT [FK_ExperienciaEducativaProfesor]
-    FOREIGN KEY ([Profesor_Id])
-    REFERENCES [dbo].[ProfesorSet]
+    FOREIGN KEY ([ExperienciaEducativa_Id])
+    REFERENCES [dbo].[ExperienciaEducativaSet]
         ([Id])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK_ExperienciaEducativaProfesor'
 CREATE INDEX [IX_FK_ExperienciaEducativaProfesor]
-ON [dbo].[ExperienciaEducativaSet]
-    ([Profesor_Id]);
+ON [dbo].[ProfesorSet]
+    ([ExperienciaEducativa_Id]);
 GO
 
 -- Creating foreign key on [ProgramaEducativo_Id] in table 'ProgramaEducativoProfesor'

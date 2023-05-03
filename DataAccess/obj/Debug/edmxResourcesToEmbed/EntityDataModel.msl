@@ -184,13 +184,14 @@
         <ScalarProperty Name="Id" ColumnName="Estudiante_Id" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ExperienciaEducativaSet">
-      <EndProperty Name="Profesor">
-        <ScalarProperty Name="Id" ColumnName="Profesor_Id" />
-      </EndProperty>
+    <AssociationSetMapping Name="ExperienciaEducativaProfesor" TypeName="EntityDataModel.ExperienciaEducativaProfesor" StoreEntitySet="ProfesorSet">
       <EndProperty Name="ExperienciaEducativa">
+        <ScalarProperty Name="Id" ColumnName="ExperienciaEducativa_Id" />
+      </EndProperty>
+      <EndProperty Name="Profesor">
         <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
+      <Condition ColumnName="ExperienciaEducativa_Id" IsNull="false" />
     </AssociationSetMapping>
     <AssociationSetMapping Name="ProgramaEducativoProfesor" TypeName="EntityDataModel.ProgramaEducativoProfesor" StoreEntitySet="ProgramaEducativoProfesor">
       <EndProperty Name="ProgramaEducativo">

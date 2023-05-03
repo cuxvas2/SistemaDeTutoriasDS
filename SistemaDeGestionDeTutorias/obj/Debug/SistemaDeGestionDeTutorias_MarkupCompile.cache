@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\obj\Debug\
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\obj\Debug\
 SistemaDeGestionDeTutorias
 none
 false
 DEBUG;TRACE
-C:\DesarrolloSoftware\SistemaDeGestionDeTutorias\SistemaDeGestionDeTutorias\App.xaml
-21355133528
+C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\App.xaml
+101515841840
 
-10-1730859789
-19-1791025966
-MainWindow.xaml;ModificarJefeDeCarrera.xaml;
+18640534019
+19-1090288822
+MainWindow.xaml;ModificarJefeDeCarrera.xaml;View\Estudiantes.xaml;View\Home.xaml;View\MenuEstudiantes.xaml;View\ModificarEstudiante.xaml;View\ModificarProfesor.xaml;View\NuevoEstudiante.xaml;View\NuevoProfesor.xaml;View\Tutores.xaml;
 
 False
 

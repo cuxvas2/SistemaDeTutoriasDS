@@ -73,6 +73,14 @@
     <Compile Include="Utilidades\ManejadorDeExcepcionesEntity.cs" />
     <Compile Include="Utilidades\MensajeUsuario.cs" />
     <Compile Include="Utilidades\Validador.cs" />
+    <Compile Include="View\Estudiantes.xaml.cs" />
+    <Compile Include="View\Home.xaml.cs" />
+    <Compile Include="View\MenuEstudiantes.xaml.cs" />
+    <Compile Include="View\ModificarEstudiante.xaml.cs" />
+    <Compile Include="View\ModificarProfesor.xaml.cs" />
+    <Compile Include="View\NuevoEstudiante.xaml.cs" />
+    <Compile Include="View\NuevoProfesor.xaml.cs" />
+    <Compile Include="View\Tutores.xaml.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,6 +96,38 @@
     <Page Include="ModificarJefeDeCarrera.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Estudiantes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MenuEstudiantes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ModificarEstudiante.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ModificarProfesor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NuevoEstudiante.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NuevoProfesor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Tutores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +170,16 @@
       <Project>{4e46275f-ddc3-4fe0-afea-062d04697da6}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\1.png" />
+    <Resource Include="Imagenes\2.png" />
+    <Resource Include="Imagenes\3.png" />
+    <Resource Include="Imagenes\4.png" />
+    <Resource Include="Imagenes\5.png" />
+    <Resource Include="Imagenes\6.png" />
+    <Resource Include="Imagenes\7.png" />
+    <Resource Include="Imagenes\8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

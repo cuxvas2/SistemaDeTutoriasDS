@@ -210,8 +210,8 @@
     <End Type="EntityDataModel.Estudiante" Role="Estudiante" Multiplicity="*" />
   </Association>
   <Association Name="ExperienciaEducativaProfesor">
-    <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="1" />
-    <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="1" />
+    <End Type="EntityDataModel.ExperienciaEducativa" Role="ExperienciaEducativa" Multiplicity="0..1" />
+    <End Type="EntityDataModel.Profesor" Role="Profesor" Multiplicity="0..1" />
   </Association>
   <Association Name="ProgramaEducativoProfesor">
     <End Type="EntityDataModel.ProgramaEducativo" Role="ProgramaEducativo" Multiplicity="*" />

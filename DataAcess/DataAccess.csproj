@@ -54,8 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstudianteManager.cs" />
     <Compile Include="LoginManager.cs" />
     <Compile Include="ManejadorDeDocumentos.cs" />
+    <Compile Include="ProfesorManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RespuestaConsulta.cs" />
   </ItemGroup>
