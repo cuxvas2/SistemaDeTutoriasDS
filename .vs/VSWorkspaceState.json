@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\DataAcess",
-    "\\PruebasDeUnidad",
-    "\\SistemaDeGestionDeTutorias",
-    "\\SistemaDeGestionDeTutorias\\Utilidades"
+    ""
   ],
-  "SelectedNode": "\\DataAcess\\LoginManager.cs",
+  "SelectedNode": "\\SistemaDeGestionDeTutorias.sln",
   "PreviewInSolutionExplorer": false
 }

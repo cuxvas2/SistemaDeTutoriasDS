@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\mende\OneDrive\Documentos\SistemaDeTutoriasDS\SistemaDeGestionDeTutorias\App.xaml
-101515841840
+121836921744
 
-19-1441554599
+21969654065
 19-1090288822
-MainWindow.xaml;ModificarJefeDeCarrera.xaml;View\Estudiantes.xaml;View\Home.xaml;View\MenuEstudiantes.xaml;View\ModificarEstudiante.xaml;View\ModificarProfesor.xaml;View\NuevoEstudiante.xaml;View\NuevoProfesor.xaml;View\Tutores.xaml;
+MainWindow.xaml;ModificarJefeDeCarrera.xaml;View\AsigarTutor.xaml;View\Estudiantes.xaml;View\Home.xaml;View\MenuEstudiantes.xaml;View\MenuTutores.xaml;View\ModificarEstudiante.xaml;View\ModificarProfesor.xaml;View\NuevoEstudiante.xaml;View\NuevoProfesor.xaml;View\Tutores.xaml;
 
 False
 

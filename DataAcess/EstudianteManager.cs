@@ -145,6 +145,31 @@ namespace DataAccess
                 return await context.EstudianteSet.Where(e => e.ProgramaEducativo.Nombre == programaEducativo).ToListAsync();
             }
         }
+
+        // Buscar estudiantes por tutor
+        public static async Task<List<Estudiante>> BuscarEstudiantesPorTutorAsync(Profesor tutor)
+        {
+            using (var context = new DataModel.EntityDataModelContainer())
+            {
+                return await context.EstudianteSet.Where(e => e.Tutor.Id == tutor.Id).ToListAsync();
+            }
+        }
+
+        // Modificar un tutor de un estudiante existente en la base de datos
+        public static async Task ModificarTutorEstudianteAsync(string matricula, string numero)
+        {
+            using (var context = new DataModel.EntityDataModelContainer())
+            {
+
+                var estudiante = await context.EstudianteSet
+                        .Where(r => r.Matricula.Equals(matricula))
+                        .FirstOrDefaultAsync();
+                Profesor profesor = await ProfesorManager.BuscarProfesorPorNumeroDePersonalAsync(numero);
+                int idTutor = profesor.Id;
+                estudiante.Tutor = context.ProfesorSet.Find(idTutor);
+                await context.SaveChangesAsync();
+            }
+        }
     }  
 }
 

@@ -135,5 +135,16 @@ namespace DataAccess
                 return await context.ProfesorSet.Where(p => p.NumeroDePersonal != "0000").ToListAsync();
             }
         }
+
+        // Buscar un Profesor por si es tutor
+        public static async Task<List<Profesor>> BuscarProfesorPorSiEsTutorAsync()
+        {
+            using (var context = new DataModel.EntityDataModelContainer())
+            {
+                return await context.ProfesorSet.Where(p => p.NumeroDePersonal != "0000" && p.EsTutor.Equals("true")).ToListAsync();
+            }
+
+        }
+
     }
 }

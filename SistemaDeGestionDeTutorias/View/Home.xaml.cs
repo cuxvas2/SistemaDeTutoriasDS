@@ -36,7 +36,7 @@ namespace SistemaDeGestionDeTutorias.View
 
         private void botonProfesores_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(new System.Uri("View/Tutores.xaml", UriKind.RelativeOrAbsolute));
+            frame.Navigate(new System.Uri("View/MenuTutores.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void botonTutores_Click(object sender, RoutedEventArgs e)

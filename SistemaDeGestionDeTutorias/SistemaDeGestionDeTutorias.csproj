@@ -73,9 +73,15 @@
     <Compile Include="Utilidades\ManejadorDeExcepcionesEntity.cs" />
     <Compile Include="Utilidades\MensajeUsuario.cs" />
     <Compile Include="Utilidades\Validador.cs" />
+    <Compile Include="View\AsigarTutor.xaml.cs">
+      <DependentUpon>AsigarTutor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Estudiantes.xaml.cs" />
     <Compile Include="View\Home.xaml.cs" />
     <Compile Include="View\MenuEstudiantes.xaml.cs" />
+    <Compile Include="View\MenuTutores.xaml.cs">
+      <DependentUpon>MenuTutores.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ModificarEstudiante.xaml.cs" />
     <Compile Include="View\ModificarProfesor.xaml.cs" />
     <Compile Include="View\NuevoEstudiante.xaml.cs" />
@@ -97,6 +103,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AsigarTutor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Estudiantes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +118,10 @@
     <Page Include="View\MenuEstudiantes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MenuTutores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ModificarEstudiante.xaml">
       <Generator>MSBuild:Compile</Generator>
