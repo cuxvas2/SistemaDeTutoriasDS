@@ -66,6 +66,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GestionarProgramaEducativo.xaml.cs">
+      <DependentUpon>GestionarProgramaEducativo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModificarJefeDeCarrera.xaml.cs">
       <DependentUpon>ModificarJefeDeCarrera.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,10 @@
     <Compile Include="Utilidades\ManejadorDeExcepcionesEntity.cs" />
     <Compile Include="Utilidades\MensajeUsuario.cs" />
     <Compile Include="Utilidades\Validador.cs" />
+    <Page Include="GestionarProgramaEducativo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -69,5 +69,14 @@ namespace SistemaDeGestionDeTutorias.Utilidades
                 MessageBoxImage.Warning);
             return messageResult == MessageBoxResult.Yes ? true : false;
         }
+
+        public static void MostrarCamposVacios()
+        {
+            MessageBox.Show(
+                "No pude dejar campos vacios, verifique y vuelva a intentar",
+                "Campos vacios",
+                MessageBoxButton.OK,
+                MessageBoxImage.Stop);
+        }
     }
 }

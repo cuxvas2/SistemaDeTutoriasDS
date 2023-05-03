@@ -40,10 +40,10 @@ namespace SistemaDeGestionDeTutorias
             }
             else
             {
-                Home home = new Home();
+                /*Home home = new Home();
                 Application.Current.MainWindow = home;
                 home.Show();
-                this.Close();
+                this.Close();*/
             }
 
         }
